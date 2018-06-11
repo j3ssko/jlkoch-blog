@@ -6,14 +6,25 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div class="primary-header">
+        <div id="primary-header">
             {% if user.is_authenticated %}
-                <a href="{% url 'post_new' %}" class="top-menu">add new entry</a>
             {% endif %}
-            j. l. koch, writer
+            <div id="logo">
+                j. l. koch <span>writer</span>
+            </div>
+            <div id="navigation">
+                <ul id="nav-list">
+                    <li><a href="{% url 'post_list' %}">blog</a></li> / 
+                    <li><a href="#">publications</a></li> / 
+                    <li><a href="{% url 'about' %}">about</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="content">
-            {% block content %}{% endblock %}
+        <div id="content">
+            <div id="content-inner">
+                {% block content %}{% endblock %}
+            </div>
         </div>
+        <a href="{% url 'post_new' %}" class="top-menu">add new entry</a>
     </body>
 </html>
