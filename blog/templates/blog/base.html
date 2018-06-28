@@ -7,15 +7,13 @@
     </head>
     <body>
         <div id="primary-header">
-            {% if user.is_authenticated %}
-            {% endif %}
             <div id="logo">
                 j. l. koch <span>writer</span>
             </div>
             <div id="navigation">
                 <ul id="nav-list">
                     <li><a href="{% url 'post_list' %}">blog</a></li> / 
-                    <li><a href="#">publications</a></li> / 
+                    <li><a href="{% url 'publications' %}">publications</a></li> / 
                     <li><a href="{% url 'about' %}">about</a></li>
                 </ul>
             </div>
@@ -25,6 +23,6 @@
                 {% block content %}{% endblock %}
             </div>
         </div>
-        <a href="{% url 'post_new' %}" class="top-menu">add new entry</a>
+        {# <a href="{% url 'post_new' %}" class="top-menu">add new entry</a> #}
     </body>
 </html>

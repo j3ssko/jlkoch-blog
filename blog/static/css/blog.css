@@ -49,20 +49,21 @@ table {
 body {
 	background: url(../images/bg.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 	color: #4a4a4a;
 	font-family: Georgia, serif;
 	-webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
 h1 a {
 	color: #4a4a4a;
-	font-size: 24px;
+	font-size: 27px;
 	font-style: italic;
+	font-weight: normal;
 	text-align: center;
 	text-decoration: none;
 	margin-bottom: 40px;
@@ -73,8 +74,17 @@ h1 a:hover {
 	text-decoration: none;
 }
 
+h2 {
+	font-size: 18px;
+	font-style: italic;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+h3 { font-weight: bold; }
+
 p {
-	font-size: 12px;
+	font-size: 13px;
 	letter-spacing: .86px;
 	line-height: 20px;
 }
@@ -82,15 +92,17 @@ p {
 a {
 	color: #4a4a4a;
 	font-style: italic;
+	font-weight: bold;
 	text-decoration: underline;
 }
 
 .date {
-	font-size: 10px;
+	font-size: 11px;
 	text-align: center;
 	text-transform: uppercase;
 	margin-bottom: 5px;
 }
+
 .post {
 	margin-bottom: 80px;
 }
@@ -128,6 +140,7 @@ ul#nav-list li {
 ul#nav-list li a {
 	color: white;
 	font-style: normal;
+	font-weight: normal;
 	padding-bottom: 3px;
 	text-decoration: none;
 }
@@ -140,6 +153,7 @@ ul#nav-list li a:hover {
 
 #content {
 	background-color: white;
+	height: auto;
 	width: 100%;
 }
 

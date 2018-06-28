@@ -41,3 +41,6 @@ def post_edit(request, pk):
 
 def about(request):
     return render(request, 'blog/about.html', {})
+
+def publications(request):
+    return render(request, 'blog/publications.html', {})
