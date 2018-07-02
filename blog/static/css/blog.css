@@ -44,6 +44,12 @@ table {
 	border-spacing: 0;
 }
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /*typography*/
 
 body {
@@ -61,7 +67,7 @@ body {
 h1,
 h1 a {
 	color: #4a4a4a;
-	font-size: 27px;
+	font-size: 32px;
 	font-style: italic;
 	font-weight: normal;
 	text-align: center;
@@ -75,7 +81,7 @@ h1 a:hover {
 }
 
 h2 {
-	font-size: 18px;
+	font-size: 21px;
 	font-style: italic;
 	font-weight: normal;
 	margin-bottom: 20px;
@@ -84,9 +90,10 @@ h2 {
 h3 { font-weight: bold; }
 
 p {
-	font-size: 13px;
+	font-size: 15px;
 	letter-spacing: .86px;
 	line-height: 20px;
+	margin-bottom: 10px;
 }
 
 a {
@@ -96,8 +103,12 @@ a {
 	text-decoration: underline;
 }
 
+a:hover {
+	color: gray;
+}
+
 .date {
-	font-size: 11px;
+	font-size: 12px;
 	text-align: center;
 	text-transform: uppercase;
 	margin-bottom: 5px;
@@ -119,6 +130,7 @@ a {
 	float: left;
 	font-size: 20px;
 	font-style: italic;
+	font-weight: normal;
 	letter-spacing: 1px;
 }
 
@@ -154,13 +166,27 @@ ul#nav-list li a:hover {
 #content {
 	background-color: white;
 	height: auto;
+	overflow: auto;
+	padding: 120px 0;
 	width: 100%;
 }
 
 #content-inner {
 	margin: 0 auto;
-	padding: 120px 0;
-	max-width: 700px;
 	min-width: 320px;
+	max-width: 800px;
+	width: 70%;
+}
+
+#bio-text, #bio-img {
+	float: left;
 	width: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+	#bio-text, #bio-img {
+		float: none;
+		width: 100%;
+	}
+	#bio-text { margin-top: 30px; }
 }

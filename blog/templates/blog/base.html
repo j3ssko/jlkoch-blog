@@ -7,9 +7,11 @@
     </head>
     <body>
         <div id="primary-header">
-            <div id="logo">
-                j. l. koch <span>writer</span>
-            </div>
+            <a href="{% url 'post_list' %}">
+                <div id="logo">
+                    j. l. koch <span>writer</span>
+                </div>
+            </a>
             <div id="navigation">
                 <ul id="nav-list">
                     <li><a href="{% url 'post_list' %}">blog</a></li> / 
@@ -18,7 +20,7 @@
                 </ul>
             </div>
         </div>
-        <div id="content">
+        <div id="content" class="group">
             <div id="content-inner">
                 {% block content %}{% endblock %}
             </div>
