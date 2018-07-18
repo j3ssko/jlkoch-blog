@@ -5,7 +5,7 @@
         <title>j. l. koch</title>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
-    <body>
+    <body class="site">
         <div id="primary-header">
             <a href="{% url 'post_list' %}">
                 <div id="logo">
@@ -16,15 +16,24 @@
                 <ul id="nav-list">
                     <li><a href="{% url 'post_list' %}">blog</a></li> / 
                     <li><a href="{% url 'publications' %}">publications</a></li> / 
-                    <li><a href="{% url 'about' %}">about</a></li>
+                    <li><a href="{% url 'bio' %}">bio</a></li>
                 </ul>
             </div>
         </div>
-        <div id="content" class="group">
+        <div id="content" class="group site-content">
             <div id="content-inner">
                 {% block content %}{% endblock %}
             </div>
         </div>
         {# <a href="{% url 'post_new' %}" class="top-menu">add new entry</a> #}
+        <div id="footer" class="group">
+            <div id="footer-content">
+                <ul id="nav-list">
+                    <li><a href="https://twitter.com/jkochwrites" target="_blank">twitter</a></li> /
+                    <li><a href="https://www.instagram.com/inwildwoods/" target="_blank">instagram</a></li>
+                </ul>
+                inquiries: jesslouko@gmail.com
+            </div>
+        </div>
     </body>
 </html>

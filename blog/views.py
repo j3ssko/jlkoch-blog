@@ -40,7 +40,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 
 def about(request):
-    return render(request, 'blog/about.html', {})
+    return render(request, 'blog/bio.html', {})
 
 def publications(request):
     return render(request, 'blog/publications.html', {})
