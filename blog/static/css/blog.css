@@ -65,6 +65,8 @@ table {
 
 .italic { font-style: italic; }
 
+.small {font-size: 12px; }
+
 body {
 	background-color: white;
 	-webkit-background-size: cover;
@@ -196,7 +198,7 @@ ul#nav-list li a:hover {
 	width: 50%;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
 	#bio-text, #bio-img {
 		float: none;
 		width: 100%;
@@ -218,5 +220,5 @@ ul#nav-list li a:hover {
 }
 
 #footer-content {
-	padding: 75px 0;
+	padding: 40px 0;
 }
