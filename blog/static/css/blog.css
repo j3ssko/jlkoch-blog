@@ -120,6 +120,7 @@ p {
 
 a {
 	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
 	color: #4a4a4a;
 	font-style: italic;
 	font-weight: bold;
@@ -176,6 +177,7 @@ ul#nav-list li {
 
 ul#nav-list li a {
 	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
 	color: white;
 	font-style: normal;
 	font-weight: normal;
