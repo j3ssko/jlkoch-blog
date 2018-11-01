@@ -13,5 +13,3 @@ Django, Python, HTML, CSS.
 * Turn on blog
 
 ## Preview
-
-![Screenshot](images/app_acreenshot.png)
