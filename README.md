@@ -1,3 +1,17 @@
-# jlkoch-blog
+# Personal Writing/Author Site
 
-Personal site for writing work. Very minimal design. Responsive. Blog works but isn't currently enabled (I don't have any blog posts yet!)
+[Live Site](https://www.jesskoch.com/)
+
+A (very) minimal personal website that I use to share publications for my graduate program. It includes a blog but it's not currently turned on because I don't have any posts yet! It's also fully responsive. 
+
+## Development
+
+Django, Python, HTML, CSS.
+
+## Future Considerations
+
+* Turn on blog
+
+## Preview
+
+![Screenshot](images/app_acreenshot.png)
