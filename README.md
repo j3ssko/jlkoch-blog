@@ -11,6 +11,7 @@ Django, Python, HTML, CSS.
 ## Future Considerations
 
 * Turn on blog
+* Custom CMS
 
 ## Preview
 
